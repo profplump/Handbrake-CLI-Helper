@@ -4,7 +4,6 @@ use warnings;
 
 # Includes
 use IPC::Open3;
-use BSD::Resource;
 use File::Basename;
 
 # Parameters
