@@ -149,7 +149,8 @@ foreach my $title (keys(%titles)) {
 
 	# Force the title number into the output file name if there are multiple titles to be encoded
 	if (scalar(keys(%titles)) > 1) {
-		$title_out_file =~ s/(\.\w{2,3})$/\-${title}${1}/;
+		my $title_text = sprintf('%02d', $title);
+		$title_out_file =~ s/(\.\w{2,3})$/\-${title_text}${1}/;
 	}
 
 	# Sanity check
